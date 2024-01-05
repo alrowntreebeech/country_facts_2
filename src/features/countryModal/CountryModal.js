@@ -4,6 +4,8 @@ import { selectCountryModal, loadCountry, selectCountryModalLoadStatus, selectCo
 import Modal from "react-bootstrap/Modal";
 import Button from 'react-bootstrap/Button';
 import Table from 'react-bootstrap/Table';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGlobe, faLandmarkFlag, faLanguage, faMoneyBill, faPen, faPeopleGroup } from '@fortawesome/free-solid-svg-icons';
 
 const CountryModal = (props) => {
     const {show, modalTitle, onClose} = props;
