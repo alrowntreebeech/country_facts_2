@@ -8,6 +8,7 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Card from 'react-bootstrap/Card';
 import { useLocation } from 'react-router-dom';
+import CountryModal from "../../features/countryModal/CountryModal";
 
 
 const SearchPage = () => {
@@ -122,7 +123,8 @@ const SearchPage = () => {
                 </Card>
             ) : (
                renderCountries()
-            )} 
+            )}
+            <CountryModal show={show} modalTitle={modalTitle} onClose={handleClose}/> 
         </Container>
     )
 }
