@@ -32,7 +32,7 @@ const CountryModal = (props) => {
                         <tbody>
                             <tr>
                                 <td>
-                                    
+                                    <FontAwesomeIcon icon={faPen}></FontAwesomeIcon>
                                 </td>
                                 <td>
                                     Official Name
@@ -42,7 +42,7 @@ const CountryModal = (props) => {
                             </tr>
                             <tr>
                                 <td>
-                                    
+                                    <FontAwesomeIcon icon={faLandmarkFlag}></FontAwesomeIcon>
                                 </td>
                                 <td>
                                     Capital City
@@ -52,7 +52,7 @@ const CountryModal = (props) => {
                             </tr>
                             <tr>
                                 <td>
-                                    
+                                    <FontAwesomeIcon icon={faPeopleGroup}></FontAwesomeIcon>
                                 </td>
                                 <td> Population
                                 </td>
@@ -61,7 +61,7 @@ const CountryModal = (props) => {
                             </tr>
                             <tr>
                                 <td>
-                                     
+                                     <FontAwesomeIcon icon={faLanguage}></FontAwesomeIcon>
                                 </td>
                                 <td>
                                     Langauges
@@ -71,7 +71,7 @@ const CountryModal = (props) => {
                             </tr>
                             <tr>
                                 <td> 
-                                    
+                                    <FontAwesomeIcon icon={faGlobe}></FontAwesomeIcon>
                                 </td>
                                 <td>
                                     Continent
@@ -81,7 +81,7 @@ const CountryModal = (props) => {
                             </tr>
                             <tr>
                                 <td>
-                                    
+                                    <FontAwesomeIcon icon={faMoneyBill}></FontAwesomeIcon>
                                 </td>
                                 <td>
                                     Currency
