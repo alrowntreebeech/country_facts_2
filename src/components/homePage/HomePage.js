@@ -7,8 +7,8 @@ const HomePage = () => {
         <Container fluid className="bg-black flex-fill">
             <Canvas>
                 <mesh>
-                    <sphereGeometry  />
-                    <meshBasicMaterial />
+                    <sphereGeometry  args={[2, 64, 32]}/>
+                    <meshBasicMaterial color={"red"}/>
                 </mesh>
             </Canvas>
         </Container>
