@@ -24,7 +24,6 @@ const CountryModal = (props) => {
         
     }, [show]);
 
-    console.log(countryProfile);
     return (
         <Modal size="lg" show={show} onHide={onClose} backdrop="static" keyboard={false}>
             <Modal.Header data-bs-theme="dark" closeButton className="bg-dark text-white">
