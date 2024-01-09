@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { selectCountries, loadCountries, selectFailedSearch, selectLoadingSearch } from "./searchPageSlice";
 import Container from 'react-bootstrap/Container';
@@ -7,7 +7,6 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Card from 'react-bootstrap/Card';
-import { useLocation } from 'react-router-dom';
 import CountryModal from "../../features/countryModal/CountryModal";
 
 
@@ -28,14 +27,10 @@ const SearchPage = () => {
     const failedSearch = useSelector(selectFailedSearch);
     const loadingSearch = useSelector(selectLoadingSearch);
 
-    const location = useLocation();
-
-    useEffect(() => {
-        setSearchTerm("");
-    }, [location]);
 
     const handleSubmit = (event) => {
         event.preventDefault();
+        setSearchTerm("");
         dispatch(loadCountries(searchTerm));
     }
 

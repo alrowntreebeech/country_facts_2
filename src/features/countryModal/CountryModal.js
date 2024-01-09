@@ -19,7 +19,6 @@ const CountryModal = (props) => {
         if (show === true) {
             const countryData = modalTitle.toLowerCase();
             dispatch(loadCountry(countryData));
-
         };
         
     }, [show]);
